@@ -24,6 +24,10 @@ def home():
 
 @app.route("/api/news")
 def news():
+    news_type = request.args.get('type')
+    if news_type:
+        news =  News.query.filter(News.category==news_type).order_by(News.published.desc()).limit(2).all()
+        return news_schema.jsonify(news)
     tech_news = News.query.filter(News.category=='tech').order_by(News.published.desc()).limit(2).all()
     entertainment_news = News.query.filter(News.category=='business').order_by(News.published.desc()).limit(2).all()
     business_news = News.query.filter(News.category=='entertainment').order_by(News.published.desc()).limit(2).all()
