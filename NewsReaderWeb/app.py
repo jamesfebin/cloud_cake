@@ -7,6 +7,7 @@ from flask_marshmallow import Marshmallow
 import json
 app = Flask(__name__)
 ma = Marshmallow(app)
+app.config['SQLALCHEMY_POOL_SIZE'] = 100
 app.config['SQLALCHEMY_POOL_RECYCLE'] = 280
 
 
