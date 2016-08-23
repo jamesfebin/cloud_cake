@@ -1,4 +1,4 @@
-from flask import Flask,jsonify,render_template
+from flask import Flask,jsonify,render_template,request
 from database import init_db
 from sqlalchemy.ext.serializer import loads, dumps
 from models import News
