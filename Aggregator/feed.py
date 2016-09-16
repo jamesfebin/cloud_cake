@@ -10,10 +10,10 @@ import MySQLdb.cursors
 import requests
 import json
 
-server='myfirstdb.cgl42w3ennqs.us-west-1.rds.amazonaws.com'
-database='myfirstdb'
-username='febin'
-password='febin123'
+server='YOUR_SERVER_ADDRESS'
+database='YOUR_DATABASE_NAME'
+username='YOUR_USER_NAME'
+password='YOUR_PASSWORD'
 
 
 def writeToDatabase(data):
