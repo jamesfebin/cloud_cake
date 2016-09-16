@@ -10,10 +10,10 @@ import MySQLdb.cursors
 import requests
 import json
 
-server='YOUR_SERVER_ADDRESS'
+server='YOUR_DB_SERVER_ADDRESS'
 database='YOUR_DATABASE_NAME'
-username='YOUR_USER_NAME'
-password='YOUR_PASSWORD'
+username='YOUR_DB_USER_NAME'
+password='YOUR_DB_PASSWORD'
 
 
 def writeToDatabase(data):
