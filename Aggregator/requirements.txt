@@ -7,4 +7,4 @@ httplib2==0.9
 python-dateutil==1.5
 requests==2.7.0
 urllib3==1.9.1
-Pillow==2.5.3
+Pillow==8.3.2
